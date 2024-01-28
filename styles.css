@@ -167,6 +167,12 @@ input:focus {
   height: 10px;
   width: 25px !important;
 }
+.marketing > div {
+  transition: transform 0.2s;
+}
+.marketing > div:hover {
+  transform: scale(1.1) !important;
+}
 
 @media screen and (min-width: 425px) {
   .marketing-card {
@@ -216,10 +222,11 @@ input:focus {
 .optimising-website .optimise-card {
   max-width: 300px;
 }
-.optimising-website .optimise-selected {
+.optimising-website .optimise-card:hover {
+  background-color: white;
   border-bottom: 5px solid var(--blue);
 }
-.optimising-website .selected-bg {
+.optimising-website .circle-bg {
   height: 400px;
   width: 400px;
   border-radius: 50%;
@@ -227,6 +234,26 @@ input:focus {
   z-index: -1;
   top: 40%;
   left: -55%;
+}
+.optimising-website .bg {
+  height: 90px;
+  width: 90px;
+  border-radius: 100px;
+  opacity: 0.05;
+  top: 16%;
+  left: 4%;
+}
+.optimising-website .keywords {
+  background-color: red;
+}
+.optimising-website .content {
+  background-color: green;
+}
+.optimising-website .target {
+  background-color: blue;
+}
+.optimising-website .continuous {
+  background-color: var(--blue);
 }
 
 @media screen and (min-width: 600px) {
@@ -259,6 +286,9 @@ input:focus {
 .strategies div {
   max-width: 300px;
 }
+.strategies div:hover {
+  box-shadow: 1px 1px 20px rgb(220, 220, 220);
+}
 .strategies h3 {
   color: #212528;
   font-size: 22px;
@@ -281,6 +311,9 @@ input:focus {
 }
 .choose-us .choose-card {
   max-width: 300px;
+}
+.choose-us div > div:hover {
+  box-shadow: 1px 1px 20px rgb(220, 220, 220);
 }
 
 .seo .image {
@@ -311,6 +344,9 @@ input:focus {
 }
 .seo .cards {
   max-width: 500px;
+}
+.seo .cards > div:hover {
+  box-shadow: 1px 1px 20px rgb(220, 220, 220);
 }
 .seo .cards img {
   width: 80px;
@@ -393,6 +429,9 @@ input:focus {
 }
 .team-members div > div {
   max-width: 250px;
+}
+.team-members > div > div:hover {
+  box-shadow: 1px 1px 20px rgb(220, 220, 220);
 }
 
 .client {

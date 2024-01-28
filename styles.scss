@@ -211,6 +211,14 @@ input:focus {
         height: 10px;
         width: 25px !important;
     }
+
+    &>div {
+        transition: transform 0.2s;
+    }
+
+    &>div:hover {
+        transform: scale(1.1) !important;
+    }
 }
 
 @media screen and (min-width:425px) {
@@ -279,11 +287,12 @@ input:focus {
         max-width: 300px;
     }
 
-    .optimise-selected {
+    .optimise-card:hover {
+        background-color: white;
         border-bottom: 5px solid var(--blue);
     }
 
-    .selected-bg {
+    .circle-bg {
         height: 400px;
         width: 400px;
         border-radius: 50%;
@@ -291,6 +300,31 @@ input:focus {
         z-index: -1;
         top: 40%;
         left: -55%;
+    }
+
+    .bg {
+        height: 90px;
+        width: 90px;
+        border-radius: 100px;
+        opacity: 0.05;
+        top: 16%;
+        left: 4%;
+    }
+
+    .keywords {
+        background-color: red;
+    }
+
+    .content {
+        background-color: green;
+    }
+
+    .target {
+        background-color: blue;
+    }
+
+    .continuous {
+        background-color: var(--blue);
     }
 }
 
@@ -334,6 +368,10 @@ input:focus {
         max-width: 300px;
     }
 
+    div:hover {
+        box-shadow: 1px 1px 20px rgb(220, 220, 220);
+    }
+
     h3 {
         color: #212528;
         font-size: 22px;
@@ -361,6 +399,10 @@ input:focus {
 
     .choose-card {
         max-width: 300px;
+    }
+
+    div>div:hover {
+        box-shadow: 1px 1px 20px rgb(220, 220, 220);
     }
 }
 
@@ -400,6 +442,10 @@ input:focus {
 
     .cards {
         max-width: 500px;
+
+        &>div:hover {
+            box-shadow: 1px 1px 20px rgb(220, 220, 220);
+        }
 
         img {
             width: 80px;
@@ -509,6 +555,10 @@ input:focus {
         max-width: 250px;
     }
 
+    &>div>div:hover {
+        box-shadow: 1px 1px 20px rgb(220, 220, 220);
+    }
+
 }
 
 //client
@@ -566,6 +616,7 @@ input:focus {
 //contact-us
 .contact-us {
     background-color: var(--bg-color);
+
 
     button {
         background-color: var(--blue);
