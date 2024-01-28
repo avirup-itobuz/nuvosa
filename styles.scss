@@ -36,8 +36,12 @@ input:focus {
     border-radius: 50%;
 }
 
-.myactive:hover {
-    // border-bottom: 2px blue dashed;
+.nav-item>a {
+    border-bottom: 5px solid white;
+}
+
+.nav-item>a:hover {
+    border-bottom: 5px solid var(--blue);
 }
 
 //hero
@@ -529,12 +533,19 @@ input:focus {
         font-size: 25px;
     }
 
-    .white {
-        color: white;
-    }
 
-    .selected {
-        background-color: var(--blue);
+    &>div>div:hover {
+        background-color: var(--blue) !important;
+
+        &>* {
+            color: white;
+        }
+
+        button {
+            background-color: yellow !important;
+            color: black;
+            border: 0;
+        }
     }
 }
 

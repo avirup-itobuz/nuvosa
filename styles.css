@@ -33,6 +33,14 @@ input:focus {
   border-radius: 50%;
 }
 
+.nav-item > a {
+  border-bottom: 5px solid white;
+}
+
+.nav-item > a:hover {
+  border-bottom: 5px solid var(--blue);
+}
+
 .hero .hero-text {
   flex: 3;
 }
@@ -411,11 +419,16 @@ input:focus {
 .plans .month {
   font-size: 25px;
 }
-.plans .white {
+.plans > div > div:hover {
+  background-color: var(--blue) !important;
+}
+.plans > div > div:hover > * {
   color: white;
 }
-.plans .selected {
-  background-color: var(--blue);
+.plans > div > div:hover button {
+  background-color: yellow !important;
+  color: black;
+  border: 0;
 }
 
 .team-members h2 {
