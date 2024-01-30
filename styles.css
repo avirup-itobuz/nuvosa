@@ -43,8 +43,25 @@ input:focus {
   border-radius: 50%;
 }
 
-.nav-item:hover > .inv {
-  visibility: visible !important;
+.nav-item:hover::before {
+  content: "";
+  width: 75%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav-item:hover::after {
+  content: "";
+  width: 20%;
+  height: 3px;
+  background-color: var(--blue);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .hero .hero-text {
@@ -117,7 +134,7 @@ input:focus {
   width: 210px;
 }
 .hero .hero-img > img {
-  width: 80%;
+  width: 100%;
 }
 .hero .man2 {
   top: 0px;
@@ -204,6 +221,7 @@ input:focus {
 }
 .marketing > div:hover {
   transform: scale(1.1) !important;
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
 
 @media screen and (min-width: 425px) {
@@ -319,7 +337,7 @@ input:focus {
   max-width: 300px;
 }
 .strategies div:hover {
-  box-shadow: 1px 1px 20px rgb(220, 220, 220);
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
 .strategies h3 {
   color: #212528;
@@ -356,7 +374,7 @@ input:focus {
   max-width: 300px;
 }
 .choose-us div > div:hover {
-  box-shadow: 1px 1px 20px rgb(220, 220, 220);
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
 
 .seo .image {
@@ -389,7 +407,7 @@ input:focus {
   max-width: 500px;
 }
 .seo .cards > div:hover {
-  box-shadow: 1px 1px 20px rgb(220, 220, 220);
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
 .seo .cards img {
   width: 80px;
@@ -457,7 +475,7 @@ input:focus {
 .plans > div > div:hover {
   background-image: url(images/plans/background.svg);
   background-position: center;
-  transition-duration: 1s;
+  transition: transform 0.6s ease-in-out;
   transform: scale(1.1);
 }
 .plans > div > div:hover > * {
@@ -485,7 +503,7 @@ input:focus {
   max-width: 250px;
 }
 .team-members > div > div:hover {
-  box-shadow: 1px 1px 20px rgb(220, 220, 220);
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
 
 .client h2 {
