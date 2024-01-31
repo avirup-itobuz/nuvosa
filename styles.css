@@ -413,6 +413,9 @@ input:focus {
   width: 80px;
 }
 
+.numbers {
+  max-width: 300px !important;
+}
 .numbers .rounded {
   height: 15px;
   width: 15px;
@@ -428,6 +431,11 @@ input:focus {
   margin-bottom: 0 !important;
 }
 
+@media screen and (min-width: 768px) {
+  .numbers {
+    max-width: 900px !important;
+  }
+}
 .check-speed h2 {
   color: #212528;
   font-size: 45px;

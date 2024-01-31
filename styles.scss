@@ -523,6 +523,8 @@ input:focus {
 
 //numbers
 .numbers {
+    max-width: 300px !important;
+
     .rounded {
         height: 15px;
         width: 15px;
@@ -538,6 +540,12 @@ input:focus {
 
     p {
         margin-bottom: 0 !important;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .numbers {
+        max-width: 900px !important;
     }
 }
 
