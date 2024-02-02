@@ -160,6 +160,7 @@ input:focus {
 
     .hero-img>img {
         width: 100%;
+        max-width: 500px;
     }
 
     .man2 {
@@ -339,6 +340,11 @@ input:focus {
 
     .optimise-card {
         max-width: 300px;
+
+        img {
+            top: 10%;
+            left: 50%;
+        }
     }
 
     .optimise-card:hover {

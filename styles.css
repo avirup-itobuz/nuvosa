@@ -135,6 +135,7 @@ input:focus {
 }
 .hero .hero-img > img {
   width: 100%;
+  max-width: 500px;
 }
 .hero .man2 {
   top: 0px;
@@ -271,6 +272,10 @@ input:focus {
 }
 .optimising-website .optimise-card {
   max-width: 300px;
+}
+.optimising-website .optimise-card img {
+  top: 10%;
+  left: 50%;
 }
 .optimising-website .optimise-card:hover {
   background-color: white;
