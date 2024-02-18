@@ -7,15 +7,52 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 :root {
     --red: #BC424E;
     --blue: #6F77F1;
     --blue-light: #F5FDFF;
     --bg-color: #FAFAFA;
+    --text-gray: #828282;
+    --text-dark: #212528;
+    --text-light-gray: #727272;
+    --text-green: #2B7A4B;
+    --yellow: #f9e9c0;
+    --green: #CEE5D2;
+    --violet: #CFD0FF;
+    --bg-light: #F2F2F2;
+    --yellow-light: #FAD725;
+    --black: #000;
+    --white: #fff;
+    --hover: rgba(2, 22, 5, 0.07);
+}
+
+.dark {
+    --body-bg: #1F1F1F;
+    --red: #BC424E;
+    --blue: #6F77F1;
+    --blue-light: #F5FDFF;
+    --bg-color: #1F1F1F;
+    --text-gray: #d8d8d8;
+    --text-dark: #ffffff;
+    --text-light-gray: #ffffff;
+    --text-green: #2B7A4B;
+    --yellow: #f9e9c0;
+    --green: #CEE5D2;
+    --violet: #CFD0FF;
+    --bg-light: #F2F2F2;
+    --yellow-light: #FAD725;
+    --black: #ffffff;
+    --white: #000000;
+    --hover: rgba(255, 255, 255, 0.07);
+}
+
+body {
+    background-color: var(--body-bg);
 }
 
 p {
-    color: #828282;
+    color: var(--text-gray);
     font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
@@ -45,7 +82,18 @@ input:focus {
     border-radius: 50%;
 }
 
+.navbar {
+    background-color: var(--bg-color);
 
+    a {
+        color: var(--text-dark);
+    }
+
+    #toggle {
+        height: 50px;
+        width: 50px;
+    }
+}
 
 .nav-item:hover {
 
@@ -84,7 +132,7 @@ input:focus {
     }
 
     h1 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 55px;
         font-weight: 600;
         line-height: 70px;
@@ -138,7 +186,7 @@ input:focus {
 
     h3 {
         max-width: 500px;
-        color: #727272;
+        color: var(--text-light-gray);
         font-family: Poppins;
         font-size: 15px;
         font-weight: 400;
@@ -188,7 +236,7 @@ input:focus {
         width: 100px;
         border-radius: 100px;
         left: -40px;
-        background-color: #f9e9c0;
+        background-color: var(--yellow);
         opacity: 0.4;
         z-index: -1;
     }
@@ -196,13 +244,13 @@ input:focus {
 
 
     .green {
-        background-color: #CEE5D2;
+        background-color: var(--green);
         left: -15%;
         top: -15%;
     }
 
     .violet {
-        background-color: #CFD0FF;
+        background-color: var(--violet);
         top: 85%;
         left: 70%;
     }
@@ -249,13 +297,13 @@ input:focus {
     h2 {
         max-width: 250px;
         line-height: 150%;
-        color: #212528;
+        color: var(--text-dark);
         font-size: 23px;
         font-weight: 300;
     }
 
     h3 {
-        color: #828282;
+        color: var(--text-gray);
         font-size: 15px;
         font-weight: 400;
         line-height: 27px;
@@ -268,11 +316,13 @@ input:focus {
 
     &>div {
         transition: transform 0.2s;
+        border: 1px solid rgb(110, 110, 110);
+        border-radius: 10px;
     }
 
     &>div:hover {
         transform: scale(1.1) !important;
-        box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
+        box-shadow: 0px 17px 33px -14px var(--hover);
     }
 }
 
@@ -308,7 +358,7 @@ input:focus {
     }
 
     h2 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 35px;
         font-weight: 500;
         line-height: normal;
@@ -320,23 +370,20 @@ input:focus {
     }
 
     h6 {
-        color: #727272;
+        color: var(--text-light-gray);
         font-family: Poppins;
         font-size: 20px;
         font-weight: 400;
         line-height: 30px;
-
         max-width: 800px;
     }
 
     h3 {
-        color: #212528;
+        color: var(--text-dark);
         font-family: Poppins;
         font-size: 24px;
         font-weight: 500;
     }
-
-
 
     .optimise-card {
         max-width: 300px;
@@ -348,7 +395,7 @@ input:focus {
     }
 
     .optimise-card:hover {
-        background-color: white;
+        background-color: var(--body-bg);
         border-bottom: 5px solid var(--blue);
     }
 
@@ -405,10 +452,14 @@ input:focus {
     min-height: 400px;
 
     h2 {
-        color: #212528;
+        // color: var(--text-dark);
         font-size: 45px;
         font-weight: 500;
         line-height: 65px;
+    }
+
+    p {
+        color: var(--bg-color);
     }
 
     .text {
@@ -433,13 +484,13 @@ input:focus {
     }
 
     h3 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 22px;
         font-weight: 500;
     }
 
     .violet {
-        background-color: #CFD0FF;
+        background-color: var(--violet);
     }
 
     .vector-top {
@@ -457,8 +508,16 @@ input:focus {
 .choose-us {
     background-color: var(--bg-color);
 
+    &>div>div {
+        background-color: var(--body-bg);
+    }
+
+    h2 {
+        color: var(--text-dark);
+    }
+
     h3 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 25px;
         font-weight: 500;
     }
@@ -496,14 +555,14 @@ input:focus {
 
     h2 {
         max-width: 600px;
-        color: #212528;
+        color: var(--text-dark);
         font-size: 35px;
         font-weight: 500;
         line-height: 65px;
     }
 
     h3 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 23px;
         font-weight: 500;
         margin-bottom: 0 !important;
@@ -538,7 +597,7 @@ input:focus {
     }
 
     h2 {
-        color: #666565;
+        color: var(--text-gray);
         font-size: 50px;
         font-weight: 600;
         line-height: 57px;
@@ -558,7 +617,7 @@ input:focus {
 //check our speed
 .check-speed {
     h2 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 45px;
         font-weight: 500;
         line-height: 65px;
@@ -576,7 +635,7 @@ input:focus {
     input {
         padding: 5px;
         border-radius: 4px;
-        background: #F2F2F2;
+        background: var(--bg-light);
     }
 
     button {
@@ -589,14 +648,14 @@ input:focus {
     background-color: var(--bg-color);
 
     h2 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 45px;
         font-weight: 500;
         line-height: 65px;
     }
 
     h4 {
-        color: #212528;
+        color: var(--text-dark) !important;
         font-size: 45px;
         font-weight: 500;
         line-height: 60px;
@@ -611,6 +670,9 @@ input:focus {
         font-size: 25px;
     }
 
+    &>div>div {
+        background-color: var(--body-bg);
+    }
 
     &>div>div:hover {
         background-image: url(images/plans/background.svg);
@@ -639,10 +701,14 @@ input:focus {
 //team-members
 .team-members {
     h2 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 40px;
         font-weight: 500;
         line-height: 65px;
+    }
+
+    h3 {
+        color: var(--text-dark);
     }
 
     p {
@@ -664,7 +730,7 @@ input:focus {
 
 
     h2 {
-        color: #212528;
+        color: var(--text-dark);
         font-size: 45px;
         font-weight: 500;
         line-height: 65px;
@@ -672,6 +738,7 @@ input:focus {
 
     p {
         max-width: 500px;
+        color: var(--text-dark);
     }
 
     img {
@@ -716,6 +783,10 @@ input:focus {
 
 //contact-us
 .contact-us {
+    h2 {
+        color: var(--text-dark);
+    }
+
     background-color: var(--bg-color);
 
 
@@ -727,6 +798,12 @@ input:focus {
 
 //footer
 .footer {
+
+    h4,
+    h6 {
+        color: var(--text-light-gray);
+    }
+
     p {
         font-size: 15px;
     }
