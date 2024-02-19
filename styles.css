@@ -321,6 +321,7 @@ input:focus {
 }
 .optimising-website .optimise-card {
   max-width: 300px;
+  border-bottom: 5px solid transparent;
 }
 .optimising-website .optimise-card img {
   top: 10%;
