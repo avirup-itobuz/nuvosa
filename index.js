@@ -1,5 +1,5 @@
 var icon = document.getElementById("toggle");
-icon.onclick = function () {
+icon.onclick = () => {
   document.body.classList.toggle("dark");
   if (document.body.classList.contains("dark")) {
     icon.src = "./images/nav/sun.png";
