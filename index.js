@@ -1,4 +1,4 @@
-var icon = document.getElementById("toggle");
+ const icon = document.getElementById("toggle");
 icon.onclick = () => {
   document.body.classList.toggle("dark");
   if (document.body.classList.contains("dark")) {
