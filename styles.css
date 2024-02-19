@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +27,11 @@
 }
 
 .dark {
-  --body-bg: #1F1F1F;
+  --body-bg: #072032;
   --red: #BC424E;
   --blue: #6F77F1;
   --blue-light: #F5FDFF;
-  --bg-color: #1F1F1F;
+  --bg-color: #091527;
   --text-gray: #d8d8d8;
   --text-dark: #ffffff;
   --text-light-gray: #ffffff;
@@ -82,9 +83,11 @@ input:focus {
 .navbar {
   background-color: var(--bg-color);
 }
+
 .navbar a {
   color: var(--text-dark);
 }
+
 .navbar #toggle {
   height: 50px;
   width: 50px;
@@ -100,6 +103,7 @@ input:focus {
   bottom: 0;
   left: 0;
 }
+
 .nav-item:hover::after {
   content: "";
   width: 20%;
@@ -114,15 +118,18 @@ input:focus {
 .hero .hero-text {
   flex: 3;
 }
-.hero .hero-text > div {
+
+.hero .hero-text>div {
   max-width: 650px;
 }
+
 .hero h1 {
   color: var(--text-dark);
   font-size: 55px;
   font-weight: 600;
   line-height: 70px;
 }
+
 .hero .expert {
   transform: rotate(-8.234deg) !important;
   width: 150px;
@@ -133,33 +140,41 @@ input:focus {
   font-size: 40px;
   font-weight: 600;
 }
+
 .hero .hero-img {
   flex: 2;
 }
+
 .hero .blue-dot {
   height: 10px;
   width: 10px;
   background-color: var(--blue);
 }
+
 .hero .blue-dot-1 {
   top: 12px;
   left: -3px;
 }
+
 .hero .blue-dot-2 {
   bottom: -13px;
   left: 7px;
 }
+
 .hero .blue-dot-3 {
   top: -10px;
   right: 7px;
 }
+
 .hero .blue-dot-4 {
   bottom: 8px;
   right: -4px;
 }
+
 .hero .hero-textheading {
   transform: scale(0.8);
 }
+
 .hero h3 {
   max-width: 500px;
   color: var(--text-light-gray);
@@ -169,37 +184,45 @@ input:focus {
   line-height: 25px;
   transform: scale(0.9);
 }
+
 .hero button {
   max-width: 500px;
   height: 40px;
 }
+
 .hero .creative-members {
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   height: 120px;
   width: 210px;
 }
-.hero .hero-img > img {
+
+.hero .hero-img>img {
   width: 100%;
   max-width: 500px;
 }
+
 .hero .man2 {
   top: 0px;
   left: 30px;
 }
+
 .hero .man3 {
   top: 0px;
   left: 60px;
 }
+
 .hero .man4 {
   top: 0px;
   left: 30px;
 }
+
 .hero .add-man {
   top: 0px;
   left: 115px;
 }
+
 .hero .yellow-circle {
   height: 100px;
   width: 100px;
@@ -209,11 +232,13 @@ input:focus {
   opacity: 0.4;
   z-index: -1;
 }
+
 .hero .green {
   background-color: var(--green);
   left: -15%;
   top: -15%;
 }
+
 .hero .violet {
   background-color: var(--violet);
   top: 85%;
@@ -224,29 +249,36 @@ input:focus {
   .hero {
     padding: 30px;
   }
+
   .hero .hero-textheading {
     transform: scale(1) !important;
   }
+
   .hero h3 {
     max-width: 500px;
   }
+
   .hero .creative-members {
     position: absolute;
     top: 70%;
     left: 54%;
   }
 }
+
 .marketing .marketing-card {
   max-width: 350px;
   transform: scale(0.9);
 }
+
 .marketing .marketing-card img {
   flex: 2;
   width: 100px;
 }
+
 .marketing .marketing-card h2 {
   flex: 3;
 }
+
 .marketing h2 {
   max-width: 250px;
   line-height: 150%;
@@ -254,22 +286,26 @@ input:focus {
   font-size: 23px;
   font-weight: 300;
 }
+
 .marketing h3 {
   color: var(--text-gray);
   font-size: 15px;
   font-weight: 400;
   line-height: 27px;
 }
+
 .marketing .right-arrow {
   height: 10px;
   width: 25px !important;
 }
-.marketing > div {
+
+.marketing>div {
   transition: transform 0.2s;
   border: 1px solid rgb(110, 110, 110);
   border-radius: 10px;
 }
-.marketing > div:hover {
+
+.marketing>div:hover {
   transform: scale(1.1) !important;
   box-shadow: 0px 17px 33px -14px var(--hover);
 }
@@ -279,22 +315,27 @@ input:focus {
     transform: scale(1) !important;
   }
 }
+
 @media screen and (min-width: 1020px) {
   .marketing-card {
     transform: scale(0.9) !important;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .marketing-card {
     transform: scale(1) !important;
   }
+
   .marketing-card h2 {
     font-size: 32px !important;
   }
 }
+
 .optimising-website .heading {
   max-width: 1200px;
 }
+
 .optimising-website h2 {
   color: var(--text-dark);
   font-size: 35px;
@@ -302,9 +343,11 @@ input:focus {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .optimising-website h2 span {
   color: var(--blue);
 }
+
 .optimising-website h6 {
   color: var(--text-light-gray);
   font-family: Poppins;
@@ -313,24 +356,29 @@ input:focus {
   line-height: 30px;
   max-width: 800px;
 }
+
 .optimising-website h3 {
   color: var(--text-dark);
   font-family: Poppins;
   font-size: 24px;
   font-weight: 500;
 }
+
 .optimising-website .optimise-card {
   max-width: 300px;
   border-bottom: 5px solid transparent;
 }
+
 .optimising-website .optimise-card img {
   top: 10%;
   left: 50%;
 }
+
 .optimising-website .optimise-card:hover {
   background-color: var(--body-bg);
   border-bottom: 5px solid var(--blue);
 }
+
 .optimising-website .circle-bg {
   height: 400px;
   width: 400px;
@@ -340,6 +388,7 @@ input:focus {
   top: 40%;
   left: -55%;
 }
+
 .optimising-website .bg {
   height: 90px;
   width: 90px;
@@ -348,15 +397,19 @@ input:focus {
   top: 16%;
   left: 4%;
 }
+
 .optimising-website .keywords {
   background-color: red;
 }
+
 .optimising-website .content {
   background-color: green;
 }
+
 .optimising-website .target {
   background-color: blue;
 }
+
 .optimising-website .continuous {
   background-color: var(--blue);
 }
@@ -366,25 +419,31 @@ input:focus {
     padding-bottom: 100px !important;
     margin-bottom: 100px !important;
   }
+
   .optimising-website h2 {
     font-size: 55px;
   }
 }
+
 .solution {
   background-image: url(images/solution/background.svg);
   min-height: 400px;
 }
+
 .solution h2 {
   font-size: 45px;
   font-weight: 500;
   line-height: 65px;
 }
+
 .solution p {
   color: var(--bg-color);
 }
+
 .solution .text {
   max-width: 500px;
 }
+
 .solution img {
   max-width: 500px;
   width: 70vw;
@@ -393,21 +452,26 @@ input:focus {
 .strategies div {
   max-width: 300px;
 }
+
 .strategies div:hover {
   box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
+
 .strategies h3 {
   color: var(--text-dark);
   font-size: 22px;
   font-weight: 500;
 }
+
 .strategies .violet {
   background-color: var(--violet);
 }
+
 .strategies .vector-top {
   left: 80%;
   top: 5%;
 }
+
 .strategies .vector-bottom {
   left: 30%;
   top: 90%;
@@ -416,39 +480,49 @@ input:focus {
 .choose-us {
   background-color: var(--bg-color);
 }
-.choose-us > div > div {
+
+.choose-us>div>div {
   background-color: var(--body-bg);
 }
+
 .choose-us h2 {
   color: var(--text-dark);
 }
+
 .choose-us h3 {
   color: var(--text-dark);
   font-size: 25px;
   font-weight: 500;
 }
+
 .choose-us p {
   max-width: 800px;
 }
+
 .choose-us img {
   height: 175px;
 }
+
 .choose-us .choose-card {
   max-width: 300px;
 }
-.choose-us div > div:hover {
+
+.choose-us div>div:hover {
   box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
 
 .seo .image {
   flex: 1;
 }
+
 .seo img {
   max-width: 600px;
 }
+
 .seo .text {
   flex: 1;
 }
+
 .seo h2 {
   max-width: 600px;
   color: var(--text-dark);
@@ -456,22 +530,27 @@ input:focus {
   font-weight: 500;
   line-height: 65px;
 }
+
 .seo h3 {
   color: var(--text-dark);
   font-size: 23px;
   font-weight: 500;
   margin-bottom: 0 !important;
 }
+
 .seo p {
   max-width: 600px;
   margin-bottom: 0 !important;
 }
+
 .seo .cards {
   max-width: 500px;
 }
-.seo .cards > div:hover {
+
+.seo .cards>div:hover {
   box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
+
 .seo .cards img {
   width: 80px;
 }
@@ -479,17 +558,20 @@ input:focus {
 .numbers {
   max-width: 300px !important;
 }
+
 .numbers .rounded {
   height: 15px;
   width: 15px;
   border-radius: 50% !important;
 }
+
 .numbers h2 {
   color: var(--text-gray);
   font-size: 50px;
   font-weight: 600;
   line-height: 57px;
 }
+
 .numbers p {
   margin-bottom: 0 !important;
 }
@@ -499,24 +581,29 @@ input:focus {
     max-width: 900px !important;
   }
 }
+
 .check-speed h2 {
   color: var(--text-dark);
   font-size: 45px;
   font-weight: 500;
   line-height: 65px;
 }
+
 .check-speed .text {
   max-width: 500px;
 }
+
 .check-speed img {
   max-width: 450px;
   width: 70vw;
 }
+
 .check-speed input {
   padding: 5px;
   border-radius: 4px;
   background: var(--bg-light);
 }
+
 .check-speed button {
   height: 35px;
 }
@@ -524,42 +611,51 @@ input:focus {
 .plans {
   background-color: var(--bg-color);
 }
+
 .plans h2 {
   color: var(--text-dark);
   font-size: 45px;
   font-weight: 500;
   line-height: 65px;
 }
+
 .plans h4 {
   color: var(--text-dark) !important;
   font-size: 45px;
   font-weight: 500;
   line-height: 60px;
 }
+
 .plans button {
   max-width: 150px;
 }
+
 .plans .dollar,
 .plans .month {
   font-size: 25px;
 }
-.plans > div > div {
+
+.plans>div>div {
   background-color: var(--body-bg);
 }
-.plans > div > div:hover {
+
+.plans>div>div:hover {
   background-image: url(images/plans/background.svg);
   background-position: center;
   transition: transform 0.6s ease-in-out;
   transform: scale(1.1);
 }
-.plans > div > div:hover > * {
+
+.plans>div>div:hover>* {
   color: white;
 }
-.plans > div > div:hover button {
+
+.plans>div>div:hover button {
   color: black;
   border: 0;
 }
-.plans > div > div > button:hover {
+
+.plans>div>div>button:hover {
   background-color: #FAD725 !important;
   color: black;
 }
@@ -570,16 +666,20 @@ input:focus {
   font-weight: 500;
   line-height: 65px;
 }
+
 .team-members h3 {
   color: var(--text-dark);
 }
+
 .team-members p {
   max-width: 700px;
 }
-.team-members div > div {
+
+.team-members div>div {
   max-width: 250px;
 }
-.team-members > div > div:hover {
+
+.team-members>div>div:hover {
   box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
 }
 
@@ -589,25 +689,31 @@ input:focus {
   font-weight: 500;
   line-height: 65px;
 }
+
 .client p {
   max-width: 500px;
   color: var(--text-dark);
 }
+
 .client img {
   width: 70px;
 }
+
 .client div {
   overflow-x: scroll;
 }
+
 .client div::-webkit-scrollbar {
   display: none;
 }
+
 .client .circles span {
   width: 5px;
   height: 5px;
   border-radius: 5px;
   background-color: rgb(236, 225, 225);
 }
+
 .client .circles span:nth-child(2) {
   width: 10px;
   height: 10px;
@@ -616,18 +722,21 @@ input:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .client > div > div {
+  .client>div>div {
     flex-shrink: 0;
     width: 500px !important;
     overflow-x: scroll;
   }
 }
+
 .contact-us {
   background-color: var(--bg-color);
 }
+
 .contact-us h2 {
   color: var(--text-dark);
 }
+
 .contact-us button {
   background-color: var(--blue);
   color: white;
@@ -637,6 +746,9 @@ input:focus {
 .footer h6 {
   color: var(--text-light-gray);
 }
+
 .footer p {
   font-size: 15px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
